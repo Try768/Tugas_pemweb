@@ -1,6 +1,6 @@
 
 <?php
-// 1. Array multidimensi mata kuliah
+// Array multidimensi mata kuliah
 $matkul = [
     ["nama" => "Algoritma", "sks" => 3, "nilai" => 85],
     ["nama" => "Pemrograman Web", "sks" => 3, "nilai" => 90],
@@ -9,7 +9,7 @@ $matkul = [
     ["nama" => "Sistem Operasi", "sks" => 3, "nilai" => 65]
 ];
 
-// 2. Fungsi helper untuk menentukan huruf dan bobot
+// Fungsi helper untuk menentukan huruf dan bobot
 function hitungBobot($nilai) {
     if ($nilai >= 80) {
         return ["huruf" => "A", "bobot" => 4.0];
@@ -95,12 +95,12 @@ $totalSKS = 0;
 </table>
 
 <?php
-// 4. Menghitung IPS
+// Menghitung IPS
 $ips = $totalSKS > 0
     ? $totalBobotSKS / $totalSKS
     : 0;
 
-// 5. Batas SKS semester depan
+// Batas SKS semester depan
 $batasSKS = $ips >= 3.00 ? 24 : 20;
 ?>
 
